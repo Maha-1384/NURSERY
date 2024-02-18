@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your's_Nursery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            var myModal = document.getElementById('myModal')
+            var myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', function () {
+                myInput.focus()
+            })
+        </script>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-black">
+        <div class="container-fluid ">
+            <a class="navbar-brand  fs-3" href="#">
+                <img src="logo.jpeg" alt="" width="80" height="60" class="d-inline-block align-text-middle">Your's_
+                Nursery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item" href="">
+                        <a class="nav-link" href="#shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- about and gift card section -->
+    <div class="container-fluid  my-3 ps-5 pt-2 pb-1 bg-dark ">
+        <div>
+            <p>
+                <a class=" btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">GIFT CARD</a>
+                <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                    aria-controls="multiCollapseExample2">About US</button>
+            </p>
+            <!-- Toggle first element -->
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body  container-fluid">
+                    <div class="d-flex  justify-content-around ">
+                        <!-- 1 -->
+                        <div class="w-50">
+                            <img src="gfcard.jpeg" class="img-fluid  w-100" alt="...">
+                        </div>
+                        <!-- 2 -->
+                        <div class="p-5">
+                            <p class="h4">GIFT_CARD</p>
+                            <p class="fs-4">$200</p>
+                            <p class="fs-5">You can't go wrong with a gift card. Choose an amount and
+                                write a personalized message to make this gift your own.</p>
+                            <p class="fs-4">Amount</p>
+                            <div>
+                                <div class="form-check  ">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        $25
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        $50
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        $60
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        $80
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="fs-4">Who's the gift card for?</p>
+                            <div class="row p-2">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="For Myself"
+                                        aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="For someone else"
+                                        aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Recipient email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Recipient name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <p class="fs-4">Message</p>
+                            <div class="form-floating p-2">
+                                <textarea class="form-control " placeholder="Leave a comment here"
+                                    id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Message</label>
+                            </div>
+                            <button type="button" class="btn btn-dark bg-black w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Toggle second element  -->
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body container-fluid">
+                    <div class=" d-flex justify-content-center  align-items-center p-3">
+                        <div class="w-75 text-center ">
+                            <p class="display-6 text-black fw-bold">OUR STORY & PHILOSOPHY</p>
+                            <p class="fs-4">In 1883 Frederick Hinsdale Horsford and Cyrus G Pringle went into the
+                                nursery
+                                business together.
+                                As botanists they hadtraveled throughout North America collecting plants. In 1893
+                                Horsford
+                                bought out Pringle andcreated F. H. HorsfordNursery in Charlotte, Vermont. The
+                                nursery
+                                is
+                                still
+                                in existence on the same acreage.Horsfordwas an avid hybridizer and became known as
+                                an
+                                international
+                                pioneer in the hybridizing of lilies. Horsford offered nearly 60 varieties for sale
+                                in
+                                1895.
+                            </p>
+                            <p class="fs-4"> As the nursery business grew, so did the selection of plants it offered
+                                to
+                                include
+                                trees,
+                                shrubs, perennials, vines, evergreens, and roses. These were all grown from seed,
+                                divisions,
+                                or rooted cuttings, started in a glass greenhouse, and then lined out neatly in the
+                                perfectly
+                                maintained fields. Plants were dug at the appropriate time, barerooted, packed in
+                                crates,
+                                and
+                                loaded onto a wagon. Crew often carted plants to the Essex, NY ferry and shipped
+                                them to
+                                gardens
+                                all over the world. By 1928 the state of Vermont listed nearly 40 nurseries doing
+                                business
+                                in
+                                the
+                                state with F.H. Horsford being the oldest and largest.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- text over image -->
+    <div class="container-fluid  my-3" id="home">
+        <div class="card position-relative text-white">
+            <img src="maintop.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay ">
+                <div class="d-flex align-items-center flex-column position-absolute top-50 start-50 translate-middle">
+                    <p class="h1">Your's_ Nursery</p>
+                    <p class="h3">Your Plant Experts</p>
+                    <a class="btn btn-dark w-50" href="#shop" role="button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- introductry our collections -->
+    <div class="container my-4 py-5 px-5 text-center">
+        <p class="display-6">OUR COLLECTION</p>
+        <p class="fs-6">
+            As your go-to online plant nursery, our Nursery Farm brings you a comprehensive array of nursery plants,
+            ensuring
+            there’s something for every taste and preference. From exquisite native plants to the vast selection in our
+            wholesale
+            plant nursery, our offerings are curated with care and passion.
+        </p>
+    </div>
+    <!-- items with peices -->
+    <div class="container-fluid p-5" id="shop">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="a.jpeg" class="card-img-top " alt="...">
+                    <div class="card-body d-flex align-items-center flex-column">
+                        <h5 class="card-title">Cactus</h5>
+                        <p class="card-text">$22.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="b.webp" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column ">
+                        <h5 class="card-title">Yarrow Plant</h5>
+                        <p class="card-text">$34.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="CC.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column ">
+                        <h5 class="card-title">Basil Plant</h5>
+                        <p class="card-text">$46.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="d.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column ">
+                        <h5 class="card-title">Daffodil Plant</h5>
+                        <p class="card-text">$23.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  px-5 pb-5 pt-0" id="shop">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="e.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column ">
+                        <h5 class="card-title">Dates Plant</h5>
+                        <p class="card-text">$73.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="f.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column ">
+                        <h5 class="card-title">Rose Plant</h5>
+                        <p class="card-text">$85.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="g.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column ">
+                        <h5 class="card-title">Money Plant</h5>
+                        <p class="card-text">$56.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="h.webp" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column ">
+                        <h5 class="card-title">Coneflower Plant</h5>
+                        <p class="card-text">$38.00</p>
+                        <button type="button" class=" btn btn-dark w-75" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container">
+        <div class="d-flex  justify-content-evenly ">
+            <div class=" d-flex align-items-start flex-column">
+                <p class="fs-6">A:500 Terry Francine St.San Francisco, CA 94158 </p>
+                <p class="fs-6"> T: 123-456-7890</p>
+                <p class="fs-6"> E: info@my-domain.com</p>
+                <p class="fs-6">MON - FRI: 7am - 10pm</p>
+                <p class="fs-6">SATURDAY: 8am - 10pm</p>
+                <p class="fs-6"> SUNDAY: 8am - 11pm</p>
+                <p class="fs-6">FAQ / Shipping & Returns /</p>
+                <p class="fs-6">Store Policy /</p>
+                <p class="fs-6">Payment Methods</p>
+            </div>
+            <div id="contact" class="d-flex flex-column">
+                <div class="row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Subject</label>
+                </div>
+                <div class="form-floating p-2">
+                    <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Message</label>
+                </div>
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <input type="email" class="form-control" id="inputPassword2" placeholder="Email">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-dark mb-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Added to Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4 text-center">
+        <p class="fs-4 ">© 2035 by Your's_Nursery. Powered and secured by <i><b>Maha Malik</b></i></p>
+    </div>
+    <!-- ____________________ -->
+
+</body>
+
+</html>
